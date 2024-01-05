@@ -1,0 +1,85 @@
+body {
+  height: 100%; 
+  background: radial-gradient(circle, #ff9595 0%, #f2daf5 100%);
+}
+
+h1{
+  text-align: center;
+}
+.task-dashboard {
+  padding: 20px;
+  min-height: 100%;
+}
+
+.status-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.status-column {
+  flex: 1;
+  margin: 0 10px;
+  background: #f1f1f1;
+  padding: 0 18px;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.status-column h3 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.status-column .MuiCardContent-root ul{
+  list-style: none;
+  padding-left: 25px;
+}
+
+.status-column .MuiCardContent-root ul li h4,
+.status-column .MuiCardContent-root ul li p{
+  margin-top: 0;
+  margin-bottom: 7px;
+}
+.status-column .MuiCardContent-root:last-child,
+.status-column .MuiCardContent-root{
+  padding: 5px 0;
+}
+
+.status-box{
+  max-height: 70vh;
+  overflow-y: auto;
+  padding: 0 8px;
+}
+
+.card-box {
+  display: grid;
+  grid-template-columns: 9fr 4fr;
+}
+.MuiIconButton-root.delete-btn{
+    float: right;
+    margin-right: 15%;
+    color: #da3939;
+    background-color: #ecc3c3;
+    margin-bottom: 13px;
+    border: 0;
+}
+.MuiButtonBase-root.add-btn{
+  font-size: 14px;
+  font-weight: 600;
+  background: #abc9e9;
+  color: #335ba1;
+  border-radius: 0;
+  width: 100%;
+  margin-bottom: 12px;
+}
+.card-box .MuiButtonBase-root.action-btn{
+    font-size: 13px;
+    font-weight: 600;
+    background-color: #ace4ae;
+    border-radius: 0;
+    color: #1e4c1e;
+    text-transform: capitalize;
+    margin-top: 15px;
+    padding: 10px;
+}
